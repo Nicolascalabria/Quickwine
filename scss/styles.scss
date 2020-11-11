@@ -1,0 +1,77 @@
+        $color-secundario: black;
+        $color-fuente: white;
+        $fuente-principal: 'Montserrat',
+        sans-serif;
+        $fuente-secundaria: 'Playfair Display',
+        serif;
+        @mixin frases {
+            background-color: $color-secundario;
+            color: $color-fuente;
+            font-family: $fuente-principal;
+            font-size: 4rem;
+            padding: 10px;
+            z-index: 3;
+            font-weight: bold;
+        }
+        
+        html {
+            box-sizing: border-box;
+            font-size: 62.5%;
+            height: 100%;
+        }
+        
+        body {
+            height: 100%;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /*----------------FOOTER----------------*/
+        
+        .socialMedia {
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            width: 3vw;
+            position: fixed;
+            top: 200px;
+            align-items: center;
+            &:hover {
+                width: 4vw;
+                transition: all .2s linear
+            }
+            i {
+                color: white;
+                font-size: 3rem;
+                padding: 10px;
+            }
+        }
+        
+        .contenedorFooter {
+            background-color: $color-secundario;
+            color: $color-fuente;
+            width: 100%;
+            height: 10vh;
+            position: relative;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .frasePie {
+                letter-spacing: 3px;
+                font-weight: lighter;
+                font-style: italic;
+                text-align: center;
+                padding: 10px;
+            }
+            .copyright {
+                text-align: center;
+                margin: 0;
+            }
+        }
+        /*----------------INDEX-----------------*/
+        
+        @import "_estilosIndex"

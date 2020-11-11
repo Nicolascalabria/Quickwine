@@ -1,0 +1,178 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  height: 100%; }
+
+body {
+  height: 100%; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*----------------FOOTER----------------*/
+.socialMedia {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  width: 3vw;
+  position: fixed;
+  top: 200px;
+  align-items: center; }
+  .socialMedia:hover {
+    width: 4vw;
+    transition: all .2s linear; }
+  .socialMedia i {
+    color: white;
+    font-size: 3rem;
+    padding: 10px; }
+
+.contenedorFooter {
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 10vh;
+  position: relative;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .contenedorFooter .frasePie {
+    letter-spacing: 3px;
+    font-weight: lighter;
+    font-style: italic;
+    text-align: center;
+    padding: 10px; }
+  .contenedorFooter .copyright {
+    text-align: center;
+    margin: 0; }
+
+/*----------------INDEX-----------------*/
+.contenedorHeader {
+  background-color: black;
+  height: 12vh;
+  width: 100%; }
+  .contenedorHeader .navbar-brand {
+    color: white;
+    font-size: 5rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700; }
+  .contenedorHeader .nav-item {
+    color: white;
+    margin: 50;
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem; }
+  .contenedorHeader .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10;
+    margin: 0px 10px;
+    font-weight: 700; }
+    .contenedorHeader .nav-link:hover {
+      color: #a6a6a6;
+      border-bottom: 1px solid white; }
+  .contenedorHeader #botonBurguer {
+    font-size: 1.5rem; }
+  .contenedorHeader #bordeBurguer {
+    border: 1px solid white; }
+
+.contenedorMain {
+  color: white; }
+  .contenedorMain .contenedorIntro {
+    background-image: url("../recursos/fondocanva.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 88vh; }
+    .contenedorMain .contenedorIntro .frase-a {
+      background-color: black;
+      color: white;
+      font-family: "Montserrat", sans-serif;
+      font-size: 4rem;
+      padding: 10px;
+      z-index: 3;
+      font-weight: bold;
+      position: absolute;
+      right: 150px;
+      top: 220px; }
+    .contenedorMain .contenedorIntro .frase-b {
+      background-color: black;
+      color: white;
+      font-family: "Montserrat", sans-serif;
+      font-size: 4rem;
+      padding: 10px;
+      z-index: 3;
+      font-weight: bold;
+      position: absolute;
+      right: 100px;
+      top: 310px; }
+  .contenedorMain .clavadista {
+    position: fixed;
+    top: 50px;
+    left: 540px;
+    right: 500px;
+    z-index: 2;
+    transform: rotate(-20deg); }
+
+.copavino {
+  position: relative;
+  bottom: 0px;
+  left: 430px;
+  right: 500px;
+  z-index: 3; }
+
+/* ---------------CATALOGO--------------- */
+.seleccionMensual {
+  background-image: url(https://i.pinimg.com/736x/cc/1d/ed/cc1ded74f33298b8ad2b65e8c39205e9.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; }
+  .seleccionMensual .tituloMensual {
+    background-color: goldenrod;
+    color: white;
+    font-weight: bolder;
+    font-size: 5rem;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 10px;
+    z-index: 3; }
+  .seleccionMensual .contenedorSeleccion {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 80%;
+    padding: 10px 0px 10px 0px;
+    margin-top: 10px;
+    z-index: 3; }
+    .seleccionMensual .contenedorSeleccion .producto {
+      background-color: white;
+      box-shadow: 1px 1px 8px black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 10px 0px 10px;
+      width: 15vw; }
+      .seleccionMensual .contenedorSeleccion .producto:hover {
+        box-shadow: 5px 5px 10px #720026;
+        transform: scale(1.1);
+        transition: 1s; }
+      .seleccionMensual .contenedorSeleccion .producto .textoProducto {
+        color: black;
+        font-weight: bolder;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1rem; }
+        .seleccionMensual .contenedorSeleccion .producto .textoProducto ul {
+          list-style: none;
+          text-align: center; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
