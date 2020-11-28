@@ -15,7 +15,7 @@ body {
 /*------ HEADER ---------*/
 .contenedorHeader {
   background-color: black;
-  min-height: 12.2vh;
+  height: 12.2vh;
   width: 100%; }
   .contenedorHeader .navbar-brand {
     color: white;
@@ -440,7 +440,7 @@ body {
         padding: 0px 3px 0px 0px; }
 
 /*---------- CELULARES 360x640  412x892---------*/
-@media (min-width: 360px) {
+@media (min-width: 360px) and (max-width: 412px) {
   /*----------HEADER-----------------*/
   .contenedorHeader {
     min-height: 11vh; }

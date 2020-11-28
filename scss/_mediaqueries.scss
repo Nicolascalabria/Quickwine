@@ -1,6 +1,6 @@
     /*---------- CELULARES 360x640  412x892---------*/
     
-    @media (min-width: 360px) {
+    @media (min-width: 360px) and (max-width: 412px) {
         $size-titulos: 1.8rem;
         $size-bajadas: 1.2rem;
         @mixin frases {
