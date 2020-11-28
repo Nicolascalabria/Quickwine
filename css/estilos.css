@@ -15,7 +15,7 @@ body {
 /*------ HEADER ---------*/
 .contenedorHeader {
   background-color: black;
-  height: 12.2vh;
+  min-height: 12.2vh;
   width: 100%; }
   .contenedorHeader .navbar-brand {
     color: white;
@@ -234,7 +234,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 25vh;
+    min-height: 25vh;
     background-color: #b2936d; }
     .contenedorMain .main-section-newsletter .formulario-suscripcion {
       padding: 10px;
@@ -271,14 +271,14 @@ body {
         .contenedorMain .main-section-newsletter .formulario-suscripcion .contenedor-casilla-email .button-suscripcion {
           outline: none;
           border: 0;
-          background-color: #b2936d; }
+          background-color: transparent;
+          position: relative;
+          right: 35px;
+          bottom: -3px; }
           .contenedorMain .main-section-newsletter .formulario-suscripcion .contenedor-casilla-email .button-suscripcion .sobre {
-            font-size: 2.5rem;
+            font-size: 2.3rem;
             color: white;
-            border: 0;
-            position: relative;
-            right: 35px;
-            bottom: 0px; }
+            border: 0; }
 
 /*-------- EFECTO CARTEL DE NEON --------*/
 @keyframes flicker {
@@ -426,3 +426,92 @@ body {
         font-size: 1.3rem;
         text-align: justify;
         padding: 0px 3px 0px 0px; }
+
+/*---------- CELULARES 360x640  412x892---------*/
+@media (min-width: 360px) {
+  /*----------HEADER-----------------*/
+  .contenedorHeader {
+    min-height: 11vh; }
+    .contenedorHeader .navbar-brand {
+      color: white;
+      font-size: 4rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700; }
+  /*--------FOOTER-------------------*/
+  .contenedorFooter .contenidoFooter {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center; }
+    .contenedorFooter .contenidoFooter .footer-redes-iconos {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px; }
+      .contenedorFooter .contenidoFooter .footer-redes-iconos i {
+        font-size: 2.5rem;
+        padding: 5px; }
+  .contenedorFooter .copyright {
+    display: none; }
+  /*-------SOCIAL MEDIA BAR-------*/
+  .socialMedia {
+    background-color: black;
+    display: flex;
+    width: 5vw;
+    flex-direction: column;
+    position: fixed;
+    top: 200px;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; }
+    .socialMedia i {
+      color: white;
+      font-size: 1.5rem;
+      padding: 5px; }
+      .socialMedia i:hover {
+        text-shadow: 1px 1px 2px white, 0 0 30px whitesmoke, 0 0 15px grey; }
+  /*----------INDEX-----------------*/
+  .contenedorMain .main-section-intro .frase-a {
+    background-color: black;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    padding: 5px 10px 5px 10px;
+    z-index: 3;
+    font-weight: bold;
+    position: absolute;
+    right: 70px;
+    top: 220px; }
+  .contenedorMain .main-section-intro .frase-b {
+    background-color: black;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    padding: 5px 10px 5px 10px;
+    z-index: 3;
+    font-weight: bold;
+    position: absolute;
+    right: 30px;
+    top: 260px; }
+  .contenedorMain .main-section-week .tituloMensual {
+    font-size: 2.5rem; }
+  .contenedorMain .main-section-week .contenedorSeleccion .producto .textoProducto {
+    font-size: 1.2rem; }
+  .contenedorMain .main-section-newsletter .formulario-suscripcion .label-suscripcion {
+    font-size: 1.5rem;
+    text-align: center; }
+  .contenedorMain .main-section-newsletter .formulario-suscripcion .contenedor-casilla-email .input-suscripcion {
+    font-size: 1.2rem;
+    padding: 10px 10px 0px 10px;
+    width: 25rem; }
+  .contenedorMain .main-section-newsletter .formulario-suscripcion .contenedor-casilla-email .button-suscripcion {
+    outline: none;
+    border: 0;
+    background-color: transparent;
+    position: relative;
+    right: 25px;
+    bottom: -3px; }
+    .contenedorMain .main-section-newsletter .formulario-suscripcion .contenedor-casilla-email .button-suscripcion .sobre {
+      font-size: 2rem;
+      color: white;
+      border: 0; } }

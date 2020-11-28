@@ -1,0 +1,124 @@
+    /*---------- CELULARES 360x640  412x892---------*/
+    
+    @media (min-width: 360px) {
+        $size-titulos: 1.8rem;
+        $size-bajadas: 1.2rem;
+        @mixin frases {
+            background-color: $color-secundario;
+            color: $color-fuente;
+            font-family: $fuente-principal;
+            font-size: 1.8rem;
+            padding: 5px 10px 5px 10px;
+            z-index: 3;
+            font-weight: bold;
+        }
+        /*----------HEADER-----------------*/
+        .contenedorHeader {
+            min-height: 11vh;
+            .navbar-brand {
+                color: $color-fuente;
+                font-size: 4rem;
+                font-family: $fuente-principal;
+                font-weight: 700;
+            }
+        }
+        /*--------FOOTER-------------------*/
+        .contenedorFooter {
+            .contenidoFooter {
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+                .footer-redes-iconos {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px;
+                    & i {
+                        font-size: 2.5rem;
+                        padding: 5px;
+                    }
+                }
+            }
+            .copyright {
+                display: none;
+            }
+        }
+        /*-------SOCIAL MEDIA BAR-------*/
+        .socialMedia {
+            background-color: black;
+            display: flex;
+            width: 5vw;
+            flex-direction: column;
+            position: fixed;
+            top: 200px;
+            align-items: center;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            i {
+                color: white;
+                font-size: 1.5rem;
+                padding: 5px;
+                &:hover {
+                    text-shadow: 1px 1px 2px white, 0 0 30px whitesmoke, 0 0 15px grey;
+                }
+            }
+        }
+        /*----------INDEX-----------------*/
+        .contenedorMain {
+            .main-section-intro {
+                .frase-a {
+                    @include frases;
+                    position: absolute;
+                    right: 70px;
+                    top: 220px;
+                }
+                .frase-b {
+                    @include frases;
+                    position: absolute;
+                    right: 30px;
+                    top: 260px;
+                }
+            }
+            .main-section-week {
+                .tituloMensual {
+                    font-size: 2.5rem;
+                }
+                .contenedorSeleccion {
+                    .producto {
+                        .textoProducto {
+                            font-size: $size-bajadas;
+                        }
+                    }
+                }
+            }
+            .main-section-newsletter {
+                .formulario-suscripcion {
+                    .label-suscripcion {
+                        font-size: 1.5rem;
+                        text-align: center;
+                    }
+                    .contenedor-casilla-email {
+                        .input-suscripcion {
+                            font-size: 1.2rem;
+                            padding: 10px 10px 0px 10px;
+                            width: 25rem;
+                        }
+                        .button-suscripcion {
+                            outline: none;
+                            border: 0;
+                            background-color: transparent;
+                            position: relative;
+                            right: 25px;
+                            bottom: -3px;
+                            .sobre {
+                                font-size: 2rem;
+                                color: $color-fuente;
+                                border: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

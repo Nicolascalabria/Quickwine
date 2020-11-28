@@ -135,7 +135,7 @@
           flex-direction: row;
           justify-content: center;
           align-items: center;
-          height: 25vh;
+          min-height: 25vh;
           background-color: #b2936d;
           .formulario-suscripcion {
               padding: 10px;
@@ -176,14 +176,14 @@
                   .button-suscripcion {
                       outline: none;
                       border: 0;
-                      background-color: #b2936d;
+                      background-color: transparent;
+                      position: relative;
+                      right: 35px;
+                      bottom: -3px;
                       .sobre {
-                          font-size: 2.5rem;
+                          font-size: 2.3rem;
                           color: $color-fuente;
                           border: 0;
-                          position: relative;
-                          right: 35px;
-                          bottom: 0px;
                       }
                   }
               }
