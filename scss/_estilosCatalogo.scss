@@ -40,13 +40,35 @@
       }
   }
   
-  .catalogotitulo {
+  .catalogoTitulo {
       display: flex;
       flex-flow: row nowrap;
       justify-content: center;
       align-items: center;
       padding: 15px;
       margin: 15px;
+      h2 {
+          padding: 10px;
+          font-family: $fuente-principal;
+          font-size: 4rem;
+          font-weight: bolder;
+      }
+      hr {
+          height: 2px;
+          background-color: black;
+          width: 10%;
+          margin: 10px;
+      }
+  }
+  
+  .catalogoTituloBodega {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      padding: 15px;
+      margin: 15px;
+      display: none;
       h2 {
           padding: 10px;
           font-family: $fuente-principal;

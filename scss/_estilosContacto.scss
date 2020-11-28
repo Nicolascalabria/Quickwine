@@ -8,7 +8,7 @@
          flex-flow: row nowrap;
          justify-content: center;
          align-items: center;
-         height: 90vh;
+         min-height: 90vh;
          .section-contacto-formulario {
              display: flex;
              flex-direction: column;

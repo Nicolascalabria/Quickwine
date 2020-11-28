@@ -70,7 +70,8 @@ body {
       list-style: none;
       display: flex;
       align-self: center;
-      padding: 15px 20px 5px 20px; }
+      padding: 15px 20px 5px 20px;
+      font-family: "Mulish", sans-serif; }
       .contenedorFooter .contenidoFooter .footer-nav ul {
         list-style: none;
         display: flex;
@@ -237,10 +238,12 @@ body {
         margin-bottom: 5px; }
       .contenedorMain .main-section-delivery .section-delivery-contenido h3 {
         text-align: center;
-        font-size: 3rem; }
+        font-size: 3rem;
+        font-family: "Montserrat", sans-serif; }
       .contenedorMain .main-section-delivery .section-delivery-contenido p {
         text-align: center;
-        font-size: 1.2rem; }
+        font-size: 1.2rem;
+        font-family: "Mulish", sans-serif; }
   .contenedorMain .main-section-newsletter {
     display: flex;
     flex-direction: row;
@@ -343,19 +346,38 @@ body {
       width: 80%;
       text-align: right; }
 
-.catalogotitulo {
+.catalogoTitulo {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
   padding: 15px;
   margin: 15px; }
-  .catalogotitulo h2 {
+  .catalogoTitulo h2 {
     padding: 10px;
     font-family: "Montserrat", sans-serif;
     font-size: 4rem;
     font-weight: bolder; }
-  .catalogotitulo hr {
+  .catalogoTitulo hr {
+    height: 2px;
+    background-color: black;
+    width: 10%;
+    margin: 10px; }
+
+.catalogoTituloBodega {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  margin: 15px;
+  display: none; }
+  .catalogoTituloBodega h2 {
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 4rem;
+    font-weight: bolder; }
+  .catalogoTituloBodega hr {
     height: 2px;
     background-color: black;
     width: 10%;
@@ -370,7 +392,7 @@ body {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    height: 90vh; }
+    min-height: 90vh; }
     .main-contacto .section-contacto .section-contacto-formulario {
       display: flex;
       flex-direction: column;
@@ -476,6 +498,9 @@ body {
     align-items: center;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px; }
+    .socialMedia:hover {
+      width: 8vw;
+      transition: none; }
     .socialMedia i {
       color: white;
       font-size: 2.5rem;
@@ -519,7 +544,7 @@ body {
     right: 20px;
     top: 275px; }
   .contenedorMain .main-section-week .tituloMensual {
-    font-size: 3rem; }
+    font-size: 3.5rem; }
   .contenedorMain .main-section-week .contenedorSeleccion .producto .textoProducto {
     font-size: 1.2rem; }
   .contenedorMain .main-section-newsletter .formulario-suscripcion .label-suscripcion {
@@ -539,4 +564,62 @@ body {
     .contenedorMain .main-section-newsletter .formulario-suscripcion .contenedor-casilla-email .button-suscripcion .sobre {
       font-size: 2rem;
       color: white;
-      border: 0; } }
+      border: 0; }
+  /*------CATALOGO---------*/
+  .contenedorCatalogo .main-catalogo .main-catalogo-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 80%; }
+    .contenedorCatalogo .main-catalogo .main-catalogo-section .main-catalogo-section-producto .catalogo-producto-texto ul {
+      color: black;
+      list-style: none;
+      text-align: center;
+      margin-top: 5px; }
+      .contenedorCatalogo .main-catalogo .main-catalogo-section .main-catalogo-section-producto .catalogo-producto-texto ul li {
+        font-size: 1.4rem; }
+      .contenedorCatalogo .main-catalogo .main-catalogo-section .main-catalogo-section-producto .catalogo-producto-texto ul:hover {
+        transform: scale(1.1); }
+  .contenedorCatalogo .main-catalogo .banner {
+    width: 80%;
+    text-align: right;
+    display: none; }
+  .catalogoTitulo {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: 15px; }
+    .catalogoTitulo h2 {
+      padding: 10px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 3rem;
+      font-weight: bolder;
+      text-align: center; }
+    .catalogoTitulo hr {
+      height: 2px;
+      background-color: black;
+      width: 10%;
+      margin: 10px; }
+  .catalogoTituloBodega {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px; }
+    .catalogoTituloBodega h2 {
+      padding: 10px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 2rem;
+      font-weight: bolder;
+      text-align: center; }
+    .catalogoTituloBodega hr {
+      height: 2px;
+      background-color: black;
+      width: 2rem;
+      margin: 10px; }
+  /*--------CONTACTO-------*/
+  .main-contacto .section-contacto .section-contacto-formulario {
+    width: 40vh; } }
