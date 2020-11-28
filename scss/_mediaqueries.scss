@@ -7,7 +7,7 @@
             background-color: $color-secundario;
             color: $color-fuente;
             font-family: $fuente-principal;
-            font-size: 1.8rem;
+            font-size: 2.5rem;
             padding: 5px 10px 5px 10px;
             z-index: 3;
             font-weight: bold;
@@ -17,7 +17,7 @@
             min-height: 11vh;
             .navbar-brand {
                 color: $color-fuente;
-                font-size: 4rem;
+                font-size: 3.5rem;
                 font-family: $fuente-principal;
                 font-weight: 700;
             }
@@ -48,7 +48,7 @@
         .socialMedia {
             background-color: black;
             display: flex;
-            width: 5vw;
+            width: 8vw;
             flex-direction: column;
             position: fixed;
             top: 200px;
@@ -57,7 +57,7 @@
             border-bottom-right-radius: 10px;
             i {
                 color: white;
-                font-size: 1.5rem;
+                font-size: 2.5rem;
                 padding: 5px;
                 &:hover {
                     text-shadow: 1px 1px 2px white, 0 0 30px whitesmoke, 0 0 15px grey;
@@ -72,17 +72,25 @@
                     position: absolute;
                     right: 70px;
                     top: 220px;
+                    display: none;
+                }
+                .frase-ab {
+                    @include frases;
+                    position: absolute;
+                    right: 60px;
+                    top: 220px;
+                    display: inline;
                 }
                 .frase-b {
                     @include frases;
                     position: absolute;
-                    right: 30px;
-                    top: 260px;
+                    right: 10px;
+                    top: 275px;
                 }
             }
             .main-section-week {
                 .tituloMensual {
-                    font-size: 2.5rem;
+                    font-size: 3rem;
                 }
                 .contenedorSeleccion {
                     .producto {

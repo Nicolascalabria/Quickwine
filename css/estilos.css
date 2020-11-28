@@ -133,6 +133,18 @@ body {
       position: absolute;
       right: 150px;
       top: 220px; }
+    .contenedorMain .main-section-intro .frase-ab {
+      background-color: black;
+      color: white;
+      font-family: "Montserrat", sans-serif;
+      font-size: 4rem;
+      padding: 10px 15px 10px 15px;
+      z-index: 3;
+      font-weight: bold;
+      position: absolute;
+      right: 150px;
+      top: 220px;
+      display: none; }
     .contenedorMain .main-section-intro .frase-b {
       background-color: black;
       color: white;
@@ -434,7 +446,7 @@ body {
     min-height: 11vh; }
     .contenedorHeader .navbar-brand {
       color: white;
-      font-size: 4rem;
+      font-size: 3.5rem;
       font-family: "Montserrat", sans-serif;
       font-weight: 700; }
   /*--------FOOTER-------------------*/
@@ -457,7 +469,7 @@ body {
   .socialMedia {
     background-color: black;
     display: flex;
-    width: 5vw;
+    width: 8vw;
     flex-direction: column;
     position: fixed;
     top: 200px;
@@ -466,7 +478,7 @@ body {
     border-bottom-right-radius: 10px; }
     .socialMedia i {
       color: white;
-      font-size: 1.5rem;
+      font-size: 2.5rem;
       padding: 5px; }
       .socialMedia i:hover {
         text-shadow: 1px 1px 2px white, 0 0 30px whitesmoke, 0 0 15px grey; }
@@ -475,26 +487,39 @@ body {
     background-color: black;
     color: white;
     font-family: "Montserrat", sans-serif;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     padding: 5px 10px 5px 10px;
     z-index: 3;
     font-weight: bold;
     position: absolute;
     right: 70px;
-    top: 220px; }
-  .contenedorMain .main-section-intro .frase-b {
+    top: 220px;
+    display: none; }
+  .contenedorMain .main-section-intro .frase-ab {
     background-color: black;
     color: white;
     font-family: "Montserrat", sans-serif;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     padding: 5px 10px 5px 10px;
     z-index: 3;
     font-weight: bold;
     position: absolute;
-    right: 30px;
-    top: 260px; }
+    right: 60px;
+    top: 220px;
+    display: inline; }
+  .contenedorMain .main-section-intro .frase-b {
+    background-color: black;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
+    padding: 5px 10px 5px 10px;
+    z-index: 3;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: 275px; }
   .contenedorMain .main-section-week .tituloMensual {
-    font-size: 2.5rem; }
+    font-size: 3rem; }
   .contenedorMain .main-section-week .contenedorSeleccion .producto .textoProducto {
     font-size: 1.2rem; }
   .contenedorMain .main-section-newsletter .formulario-suscripcion .label-suscripcion {
