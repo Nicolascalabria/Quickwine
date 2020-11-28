@@ -1,0 +1,15 @@
+$color-secundario: black;
+$color-fuente: white;
+$fuente-principal: 'Montserrat',
+sans-serif;
+$fuente-secundaria: 'Mulish',
+sans-serif;
+@mixin frases {
+    background-color: $color-secundario;
+    color: $color-fuente;
+    font-family: $fuente-principal;
+    font-size: 4rem;
+    padding: 10px 15px 10px 15px;
+    z-index: 3;
+    font-weight: bold;
+}

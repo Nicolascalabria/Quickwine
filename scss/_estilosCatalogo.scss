@@ -1,0 +1,62 @@
+  /*---------CATALOGO--------------*/
+  
+  .contenedorCatalogo {
+      display: flex;
+      justify-content: center;
+      font-family: $fuente-secundaria;
+      .main-catalogo {
+          display: flex;
+          flex-flow: column nowrap;
+          align-items: center;
+          .main-catalogo-section {
+              display: flex;
+              flex-flow: row wrap;
+              justify-content: space-between;
+              width: 80%;
+              .main-catalogo-section-producto {
+                  color: $color-secundario;
+                  text-align: center;
+                  padding: 25px 10px 10px 10px;
+                  margin: 15px;
+                  align-items: center;
+                  .catalogo-producto-texto ul {
+                      color: $color-secundario;
+                      list-style: none;
+                      text-align: center;
+                      margin-top: 5px;
+                      & li {
+                          font-size: 1.4rem;
+                      }
+                      &:hover {
+                          transform: scale(1.1);
+                      }
+                  }
+              }
+          }
+          .banner {
+              width: 80%;
+              text-align: right;
+          }
+      }
+  }
+  
+  .catalogotitulo {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      padding: 15px;
+      margin: 15px;
+      h2 {
+          padding: 10px;
+          font-family: $fuente-principal;
+          font-size: 4rem;
+          font-weight: bolder;
+      }
+      hr {
+          height: 2px;
+          background-color: black;
+          width: 10%;
+          margin: 10px;
+      }
+  }

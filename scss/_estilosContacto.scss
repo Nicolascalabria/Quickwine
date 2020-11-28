@@ -1,0 +1,66 @@
+ /*-------CONTACTO--------*/
+ 
+ .main-contacto {
+     background-image: url(../recursos/mujer-vino.jpg);
+     background-size: cover;
+     .section-contacto {
+         display: flex;
+         flex-flow: row nowrap;
+         justify-content: center;
+         align-items: center;
+         height: 90vh;
+         .section-contacto-formulario {
+             display: flex;
+             flex-direction: column;
+             justify-content: flex-start;
+             color: white;
+             background-color: black;
+             padding: 30px 20px 30px 20px;
+             align-items: center;
+             width: 50vh;
+             .formulario-titulo {
+                 font-size: 3rem;
+                 padding: 10px;
+                 font-family: $fuente-principal;
+             }
+             form {
+                 display: flex;
+                 flex-flow: column nowrap;
+                 padding: 15px;
+                 font-size: 1.5rem;
+                 input {
+                     border: 0;
+                     padding: 10px 10px 0px 0px;
+                     margin-bottom: 10px;
+                     border-bottom: 1px solid white;
+                     background-color: black;
+                     color: white;
+                     &:focus {
+                         outline: none;
+                         background-color: black;
+                         color: white;
+                     }
+                     &::placeholder {
+                         color: white;
+                         font-family: $fuente-secundaria;
+                     }
+                 }
+                 textarea {
+                     margin: 15px 0px 10px 0px;
+                     font-family: $fuente-secundaria;
+                     border: none;
+                     border-bottom: 1px solid white;
+                 }
+                 button {
+                     background-color: black;
+                     border: 1px solid white;
+                     font-family: $fuente-secundaria;
+                     color: white;
+                     margin-top: 10px;
+                     padding: 5px;
+                     text-align: center;
+                 }
+             }
+         }
+     }
+ }

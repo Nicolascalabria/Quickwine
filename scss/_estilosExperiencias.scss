@@ -1,0 +1,27 @@
+/*----- EXPERIENCIAS -----*/
+
+.main-experiencias {
+    display: flex;
+    justify-content: center;
+    .main-experiencias-section {
+        width: 80%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        .experiencia {
+            width: 50vh;
+            padding: 20px;
+            h4 {
+                padding: 10px 10px 5px 0px;
+                font-size: 2rem;
+                font-family: $fuente-secundaria;
+                font-weight: bolder;
+            }
+            p {
+                font-size: 1.3rem;
+                text-align: justify;
+                padding: 0px 3px 0px 0px;
+            }
+        }
+    }
+}
