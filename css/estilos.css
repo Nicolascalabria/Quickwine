@@ -443,7 +443,7 @@ body {
 @media (min-width: 360px) and (max-width: 412px) {
   /*----------HEADER-----------------*/
   .contenedorHeader {
-    min-height: 11vh; }
+    height: auto; }
     .contenedorHeader .navbar-brand {
       color: white;
       font-size: 3.5rem;
@@ -472,7 +472,7 @@ body {
     width: 8vw;
     flex-direction: column;
     position: fixed;
-    top: 200px;
+    top: 350px;
     align-items: center;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px; }
@@ -492,7 +492,7 @@ body {
     z-index: 3;
     font-weight: bold;
     position: absolute;
-    right: 70px;
+    right: 90px;
     top: 220px;
     display: none; }
   .contenedorMain .main-section-intro .frase-ab {
@@ -504,7 +504,7 @@ body {
     z-index: 3;
     font-weight: bold;
     position: absolute;
-    right: 60px;
+    right: 90px;
     top: 220px;
     display: inline; }
   .contenedorMain .main-section-intro .frase-b {
@@ -516,7 +516,7 @@ body {
     z-index: 3;
     font-weight: bold;
     position: absolute;
-    right: 10px;
+    right: 20px;
     top: 275px; }
   .contenedorMain .main-section-week .tituloMensual {
     font-size: 3rem; }
