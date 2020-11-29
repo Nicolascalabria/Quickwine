@@ -118,7 +118,7 @@ body {
 .contenedorMain {
   color: white; }
   .contenedorMain .main-section-intro {
-    background-image: url("../recursos/fondocanva.png");
+    background-image: url("../recursos/fondo-index.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -385,7 +385,7 @@ body {
 
 /*-------CONTACTO--------*/
 .main-contacto {
-  background-image: url(../recursos/mujer-vino.jpg);
+  background-image: url(../recursos/mujer-vino.png);
   background-size: cover; }
   .main-contacto .section-contacto {
     display: flex;
@@ -461,8 +461,8 @@ body {
         text-align: justify;
         padding: 0px 3px 0px 0px; }
 
-/*---------- CELULARES 360x640  412x890---------*/
-@media (min-width: 360px) and (max-width: 415px) {
+/*---------- CELULARES 360x640  560x890---------*/
+@media (min-width: 360px) and (max-width: 560px) {
   /*----------HEADER-----------------*/
   .contenedorHeader {
     height: auto; }
