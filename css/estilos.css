@@ -461,8 +461,8 @@ body {
         text-align: justify;
         padding: 0px 3px 0px 0px; }
 
-/*---------- CELULARES 360x640  412x892---------*/
-@media (min-width: 360px) and (max-width: 412px) {
+/*---------- CELULARES 360x640  412x890---------*/
+@media (min-width: 360px) and (max-width: 415px) {
   /*----------HEADER-----------------*/
   .contenedorHeader {
     height: auto; }
