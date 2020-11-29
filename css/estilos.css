@@ -385,7 +385,7 @@ body {
 
 /*-------CONTACTO--------*/
 .main-contacto {
-  background-image: url(../recursos/mujer-vino.png);
+  background-image: url(../recursos/mujer-vino.jpg);
   background-size: cover; }
   .main-contacto .section-contacto {
     display: flex;
