@@ -170,7 +170,7 @@
             align-items: center;
             padding: 15px;
             margin: 15px;
-            h2 {
+            h1 {
                 padding: 10px;
                 font-family: $fuente-principal;
                 font-size: 3rem;
@@ -211,6 +211,17 @@
                 .section-contacto-formulario {
                     width: 40vh;
                 }
+            }
+        }
+        /*----- EXPERIENCIAS -----*/
+        .main-experiencias {
+            display: flex;
+            justify-content: center;
+            .main-experiencias-section {
+                width: 80%;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
             }
         }
     }
